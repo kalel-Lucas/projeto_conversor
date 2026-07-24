@@ -1,4 +1,7 @@
 import requests 
 
 def converter_moeda (): 
-    pass 
+    url = "https://economia.awesomeapi.com.br/last/USD-BRL"
+    resposta = requests.get(url)
+    dados = resposta.json()
+    
